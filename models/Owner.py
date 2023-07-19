@@ -5,6 +5,7 @@ class Owner:
     def __init__ ( self, name , pronouns, adoption):
         self.name = name
         self.pronouns = pronouns
+        self.adoption = adoption
 
     def get_name(self):
         return self._name
