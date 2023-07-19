@@ -1,24 +1,19 @@
-
-class Pet() :
-    def __init__(self, name='Spot', age=3, species='dog'):
+class Pet:
+    def __init__(self, name, age, species):
         self.name = name
-        self.age = age
+        self.age = age 
         self.species = species
-        pass
     
-    def feed(self):
-        print("feeding...")
-        
     def bathe(self):
-        print("bathing...")
-        
+        print(f'{self.name} is taking a bubble bath!')
+
     def walk(self):
-        print("walking...")
-        
+        print(f'{self.name} is strutting their fluff!')
+
+    def feed(self):
+        print(f'{self.name} is eating {self.species} food!')
+
     def sleep(self):
-        print("sleeping...")
-    # def play(self):
-    #     print("playing...")
-    
-        
-    pass
+        print("zZzZzZzZ")
+
+

@@ -1,14 +1,19 @@
-from pet import Pet
-# from task import Task
 
-class Owner () :
+class Owner:
 
-    def __init__(self, name='John Doe'):
+    def __init__ ( self, name , pronouns):
         self.name = name
-        self.pets = []
-    
-    def add_pet(self, name, age, species):
-        self.pets.append(Pet(name, age, species))
+        self.pronouns = pronouns
+
+
+    def adopt(self, pet):
         pass
         
-    pass
+
+
+
+
+
+
+
+
