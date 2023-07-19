@@ -27,6 +27,7 @@ class Adoption:
 
     owner = property(get_owner, set_owner)
 
+
     def get_pet(self):
         return self._pet
     
