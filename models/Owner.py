@@ -1,3 +1,4 @@
+from models.Adoption import Adoption
 
 class Owner:
 
@@ -27,14 +28,18 @@ class Owner:
     
     pronouns = property(get_pronouns, set_pronouns)
 
+    def get_adoption(self):
+        return self._adoption
+        
+    def set_adoption(self, new_adoption):
+        if isinstance(new_adoption, Adoption):
+            self._adoption = new_adoption
+        else:
+            raise Exception('Must be an instance of Adoption')
+        
+    adoption = property(get_adoption, set_adoption)
+    
     def adopt(self, pet):
         pass
         
-
-
-
-
-
-
-
 
