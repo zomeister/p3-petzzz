@@ -1,8 +1,13 @@
 class Pet:
-    def __init__(self, name, age, species):
+    def __init__(self, name, species, age):
         self.name = name
-        self.age = age 
         self.species = species
+        self.age = age
+        
+    def owners(self):
+        from Adoption import Adoption
+        return [a.owner for a in Adoption.all if a.pet == self]
+
     
     def get_name(self):
         return self._name 

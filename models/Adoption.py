@@ -3,21 +3,12 @@ from models.Pet import Pet
 
 class Adoption:
     all = []
-    def __init__(self, description, owner, pet):
-        self.description = description
+    def __init__(self, owner, pet):
         self.owner = owner
         self.pet = pet
         Adoption.all.append(self)
 
-    def get_description(self):
-        return self._description
-
-    def set_description(self, new_description):
-        if type(new_description) is str:
-            self._description = new_description
-        else:
-            raise Exception('Description must be a string!')
-
+        
     def get_owner(self):
         return self._owner 
     
