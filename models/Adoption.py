@@ -1,6 +1,7 @@
 class Adoption:
     all = []
     def __init__(self, owner, pet):
+
         # self.description = description
         self.owner = owner
         self.pet = pet
@@ -18,6 +19,7 @@ class Adoption:
     #     else:
     #         raise Exception('set_description error.')
     # description = property(get_description, set_description)
+
     def get_owner(self):
         return self._owner 
     def get_pet(self):
