@@ -25,13 +25,13 @@ class Adoption:
     def get_pet(self):
         return self._pet
     def set_owner(self, new_owner):
-        from models.Owner import Owner
+        from models.owner import Owner
         if isinstance(new_owner, Owner):
             self._owner = new_owner
         else:
             raise Exception('set_owner error.')
     def set_pet(self, new_pet):
-        from models.Pet import Pet
+        from models.pet import Pet
         if isinstance(new_pet, Pet):
             self._pet = new_pet
         else:
