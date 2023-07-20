@@ -27,24 +27,15 @@ Bathing: Keep your pet clean and fresh by giving it a bath when it gets dirty.
 
 Bedtime: Pets need their rest too! Make sure to put your pet to bed at an appropriate time.
 
-<!-- 4. Earning Points: Successfully completing tasks and taking good care of your pet will earn you points. Aim to achieve the highest score possible! -->
-
 >> Game Features 
 Cute and colorful graphics to engage players of all ages.
 
 A variety of pet options, each with its own distinct characteristics.
 
-Real-time pet health and happiness indicators to track your pet's well-being.
-
 Engaging tasks and challenges to keep the gameplay interesting.
-
-Score tracking system to motivate players to take better care of their pets.
 
 >> Contributing
 If you find any issues or have suggestions to enhance the game, feel free to open an issue or submit a pull request. We welcome your contributions!
 
 >> Credits
-This game was developed by [Your Name] as a fun Python project. It was inspired by the love for pets and the desire to provide an interactive and entertaining pet simulation experience.
-
->> License
-This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as per the terms of the license.
+This game was developed by Jessica, Zoe and Erica as a fun Python project. It was inspired by the love for pets and the desire to provide an interactive and entertaining pet simulation experience.
