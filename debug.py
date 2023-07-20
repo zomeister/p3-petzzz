@@ -12,7 +12,7 @@ pet4 = Pet("Dr. Motorcycle", 5, "cat")
 own1 = Owner('Erica', 'she/her')
 own2 = Owner('Zoe', 'she/her')
 
-adopt1 = Adoption("attempt uno", own1, pet1)
+adopt1 = Adoption(own1, pet1)
 # adopt2 = Adoption()
 
 
