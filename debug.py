@@ -1,7 +1,7 @@
 import ipdb
 
-from models.Adoption import Adoption
-from models.Pet import Pet
+from models.adoption import Adoption
+from models.pet import Pet
 from models.Owner import Owner
 
 pet1 = Pet("Fido" , 3 , "dog")
