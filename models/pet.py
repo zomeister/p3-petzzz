@@ -1,10 +1,12 @@
 class Pet:
+    all = []
     def __init__(self, name, age, species):
         self.name = name
         self.age = age 
         self.species = species
         self._owners = []
         self._adoptions = []
+        Pet.all.append(self)
        
     def get_name(self):
         return self._name 

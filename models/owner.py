@@ -1,9 +1,11 @@
 class Owner:
+    all = []
     def __init__ ( self, name , pronouns):
         self.name = name
         self.pronouns = pronouns
         self._pets = []
         self._adoptions = []
+        Owner.all.append(self)
     
     def get_name(self):
         return self._name
@@ -15,7 +17,7 @@ class Owner:
         else:
             raise Exception('Name must be a string within 20 characters!')
     def set_pronouns(self, new_pronouns):
-        if isinstance(new_pronouns, str):
+        if isinstance(new_pronouns, str) and 1 <= len(new_pronouns) <= 20:
             self._pronouns = new_pronouns
         else:
             raise Exception('Must be a string!')
@@ -28,11 +30,13 @@ class Owner:
             self._pets.append(newb)
         return self._pets
     def adoptions(self, newb=None):
+        
         from models.adoption import Adoption
         if newb and isinstance(newb, Adoption):
             self._adoptions.append(newb)
         return self._adoptions
-    
+    def register_owner():
+        pass
     def adopt(self, pet):
         pass
         
