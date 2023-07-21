@@ -1,8 +1,6 @@
 class Adoption:
     all = []
     def __init__(self, owner, pet):
-
-        # self.description = description
         self.owner = owner
         self.pet = pet
         Adoption.all.append(self)
@@ -10,16 +8,7 @@ class Adoption:
         owner.pets(pet)
         pet.adoptions(self)
         pet.owners(owner)
-    
-    # def get_description(self):
-    #     return self._description
-    # def set_description(self, new_description):
-    #     if type(new_description) is str and len(new_description) > 0:
-    #         self._description = new_description
-    #     else:
-    #         raise Exception('set_description error.')
-    # description = property(get_description, set_description)
-
+        return
     def get_owner(self):
         return self._owner 
     def get_pet(self):
